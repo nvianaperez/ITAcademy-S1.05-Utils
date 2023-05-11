@@ -22,20 +22,20 @@ public class DirExercise4 {
         }
     }
 
-    private static void readTxtInputStream() {
-
-        InputStream inputStream = DirExercise4.class.getResourceAsStream("file.txt");
-        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-        try(inputStreamReader; bufferedReader) {
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (IOException e) {
-            System.out.println(e.getMessage());;
-        }
-    }
+//    private static void readTxtInputStream() {
+//
+//        InputStream inputStream = DirExercise4.class.getResourceAsStream("file.txt");
+//        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+//        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+//        try(inputStreamReader; bufferedReader) {
+//            String line;
+//            while ((line = bufferedReader.readLine()) != null) {
+//                System.out.println(line);
+//            }
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());;
+//        }
+//    }
 //    ToDo: resolver la Exception in thread "main" java.lang.NullPointerException
 
 }

@@ -40,7 +40,9 @@ public class DirExercise3 {
     }
 
     public static void writeTxt (List<String> listTree) {
-        String pathFile = "C:\\_PROGRAMMING\\BackEnd_ITAcademy\\Sprint1_S5\\src\\main\\java\\S5_N1_E3\\treeFile.txt";
+//        String pathFile = "C:\\_PROGRAMMING\\BackEnd_ITAcademy\\Sprint1_S5\\src\\main\\java\\S5_N1_E3\\treeFile.txt";
+        String pathFile = "treeFile.txt";
+
         File f = new File(pathFile);
         try(FileWriter fr = new FileWriter(f); BufferedWriter b = new BufferedWriter(fr)) {
             for ( String line : listTree ) {
