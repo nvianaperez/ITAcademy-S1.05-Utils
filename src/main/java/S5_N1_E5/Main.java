@@ -17,14 +17,15 @@ public class Main {
         employees.add(e3);
 
         serializing_deserializing(employees);
+
     }
     public static void serializing_deserializing (List<Employee> employees) {
         try {
-            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("file_serialized.txt"));
+            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("file_serialized.ser"));
             out.writeObject(employees);
             out.close();
 
-            ObjectInputStream in = new ObjectInputStream(new FileInputStream("file_serialized.txt"));
+            ObjectInputStream in = new ObjectInputStream(new FileInputStream("file_serialized.ser"));
             List<Employee> employeesCopy = (List<Employee>)in.readObject(); //casting
             in.close();
 
@@ -32,9 +33,9 @@ public class Main {
                 System.out.println(e);
             }
         } catch (IOException e) {
-            System.out.println(e.getStackTrace());;
+            System.out.println(e.getStackTrace());
         } catch (ClassNotFoundException e) {
-            System.out.println(e.getStackTrace());;
+            System.out.println(e.getStackTrace());
         }
     }
 

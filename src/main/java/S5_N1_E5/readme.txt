@@ -8,7 +8,7 @@ Check that .class files were created in the previous directory Ex.: "DirExercise
 
 ********* RUNNING **********
 From "package directory" of the project
-Type --> java <package.Class.java> <"absolute path for file.txt">
+Type --> java <package.Class.java>
 
 Ex.: java S5_N1_E5.Main
 
